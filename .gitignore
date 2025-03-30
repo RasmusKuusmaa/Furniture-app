@@ -1,0 +1,74 @@
+# User-specific files
+.idea/
+.vscode/
+.DS_Store
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]Release/
+[Dd]ebug/
+x64/
+x86/
+[Aa]rm64/
+[Aa]rmeabi-v7a/
+[Aa]rm/
+
+# User-specific build configurations
+.vs/
+.vscode/
+
+# Android build artifacts
+*.apk
+*.ap_ 
+*.dex
+*.o
+*.so
+*.class
+bin/
+obj/
+Generated/
+
+# iOS build artifacts
+bin/
+obj/
+output/
+
+# Windows Phone 8.1, UWP, and other platform build artifacts
+obj/
+bin/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+
+# JetBrains Rider
+.idea/
+
+# Xamarin Studio
+.vscode/
+
+# NuGet packages
+*.nupkg
+*.nuspec
+*.snupkg
+.nuget/
+packages/
+
+# Temporary files
+Thumbs.db
+ehthumbs.db
+
+# VS Code settings
+.vscode/
+
+# Xamarin Studio specific files
+.idea/
+
+# Other files to ignore (optional)
+*.log
+*.swp
