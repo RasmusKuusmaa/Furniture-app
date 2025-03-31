@@ -1,12 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="naidisprojektmobile.Views.SignInPage">
+             x:Class="naidisprojektmobile.Views.SignInPage"
+             BackgroundColor="White"
+             Title="Sign In">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome tofesfse Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20, 0">
+            <Label Text="E-mail"/>
+            <Frame BorderColor="#8D9BB5" HasShadow="False" CornerRadius="10">
+                <Entry x:Name="EmailEntry"
+                          Placeholder="example@gmail.com"/>
+            </Frame>
+
+            <Label Text="Password"/>
+            <Frame BorderColor="#8D9BB5" HasShadow="False" CornerRadius="10">
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="*******"/>
+            </Frame>
+
+            <Button Margin="0,30" Text="Sign In" WidthRequest="500"
+                        HeightRequest="75"
+                        BackgroundColor="#4F63AC"
+                        TextColor="white"
+                        CornerRadius="5"
+                        FontSize="16"
+                        FontAttributes="Bold">
+
+            </Button>
+            <StackLayout Margin="0, 20,0, 0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                <BoxView HeightRequest="1" WidthRequest="100" Color="Gray" VerticalOptions="Center"/>
+                <Label Text="Or Sign up with" VerticalOptions="Center"/>
+                <BoxView HeightRequest="1" WidthRequest="100" Color="Gray" VerticalOptions="Center"/>
+            </StackLayout>
+            
+            <Button
+                    BackgroundColor="#3F4A59"
+                    Text="G"
+                    TextColor="White"
+                    FontSize="35"
+                    WidthRequest="142"
+                    HeightRequest="60"
+                    CornerRadius="10"
+                    HorizontalOptions="Center"/>
+
+            <Label HorizontalOptions="Center" Margin="0, 30, 0, 0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Already have an account?  "/>
+                        <Span Text="Sign in" FontAttributes="Bold"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
