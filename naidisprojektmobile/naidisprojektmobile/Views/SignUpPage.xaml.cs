@@ -16,6 +16,8 @@ namespace naidisprojektmobile.Views
         {
             InitializeComponent();
 
+            NavigationPage.SetHasNavigationBar(this, true);
+
         }
     }
 }

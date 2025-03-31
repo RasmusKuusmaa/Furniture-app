@@ -11,7 +11,11 @@ namespace naidisprojektmobile
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new SplashPage());
+            MainPage = new NavigationPage(new SplashPage())
+            {
+                BarBackgroundColor = Color.White,
+                BarTextColor = Color.FromHex("#4F63AC")
+            };
         }
 
         protected override void OnStart()

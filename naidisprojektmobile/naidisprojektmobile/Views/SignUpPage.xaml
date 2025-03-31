@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="naidisprojektmobile.Views.SignUpPage"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             Title="Sign Up">
     <ContentPage.Content>
         <Grid RowDefinitions="0.7*, 0.3*" Padding="20">
             
