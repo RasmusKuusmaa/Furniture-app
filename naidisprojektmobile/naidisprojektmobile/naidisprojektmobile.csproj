@@ -22,8 +22,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Compile Remove="NewFolder\**" />
     <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
     <EmbeddedResource Remove="Resources\**" />
+    <None Remove="NewFolder1\**" />
+    <None Remove="NewFolder\**" />
     <None Remove="Resources\**" />
   </ItemGroup>
 
@@ -38,11 +44,6 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>

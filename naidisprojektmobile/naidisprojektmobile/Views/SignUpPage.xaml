@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="naidisprojektmobile.Views.SignUpPage"
              BackgroundColor="White"
+             xmlns:controls="clr-namespace:naidisprojektmobile.Controls"
              Title="Sign Up">
     <ContentPage.Content>
         <StackLayout Padding="20, 0" Margin="0, 30, 0, 0">
@@ -40,13 +41,7 @@
                            VerticalTextAlignment="Center"/>
             </StackLayout>
 
-            <Button Text="Sign Up" WidthRequest="500"
-                        HeightRequest="75"
-                        BackgroundColor="#4F63AC"
-                        TextColor="white"
-                        CornerRadius="5"
-                        FontSize="16"
-                        FontAttributes="Bold">
+            <controls:CustomButton Text="Sign Up"/>
 
             </Button>
             <StackLayout Margin="0, 20,0, 0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
