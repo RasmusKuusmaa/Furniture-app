@@ -11,7 +11,7 @@ namespace naidisprojektmobile
         {
             InitializeComponent();
 
-            MainPage = new SplashPage();
+            MainPage = new NavigationPage(new SplashPage());
         }
 
         protected override void OnStart()

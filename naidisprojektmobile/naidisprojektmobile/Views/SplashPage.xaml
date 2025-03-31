@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="naidisprojektmobile.Views.SplashPage"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
         <Grid RowDefinitions="25,auto, 20, auto, 30, auto">
@@ -37,14 +38,16 @@
                         TextColor="white"
                         CornerRadius="5"
                         FontSize="16"
-                        FontAttributes="Bold">
+                        FontAttributes="Bold"
+                        Clicked="OnSignUpClicked">
                     
                 </Button>
                 <Button Text="Sign In"
                         BackgroundColor="White"
                         TextColor="#4F63AC"
                         FontSize="16"
-                        FontAttributes="Bold"></Button>
+                        FontAttributes="Bold"
+                        Clicked="OnSignInClicked"></Button>
             </StackLayout>
 
         </Grid>
