@@ -34,6 +34,7 @@ namespace naidisprojektmobile.Controls
             get => (bool)GetValue(IsPasswordProperty);
             set => SetValue(IsPasswordProperty, value);
         }
+      
 
         public FormField()
         {

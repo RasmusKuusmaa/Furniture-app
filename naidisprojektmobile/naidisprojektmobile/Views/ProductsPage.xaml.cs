@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace naidisprojektmobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SignInPage : ContentPage
+    public partial class ProductsPage : ContentPage
     {
-        public SignInPage()
+        public ProductsPage()
         {
             InitializeComponent();
-        }
-        
-        private async void OnSignInClicked(object sender, EventArgs e)
-        {
-           
-
-            await Navigation.PushAsync(new ProductsPage());
         }
     }
 }
