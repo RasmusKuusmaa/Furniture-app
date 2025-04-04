@@ -24,14 +24,14 @@ namespace naidisprojektmobile.Views
             Children.Add(new NavigationPage(new ProductsPage())
             {
                 IconImageSource = ImageSource.FromResource("naidisprojektmobile.Images.Vector.png",
-                typeof(BottomNavPage).GetTypeInfo().Assembly)
+                typeof(BottomNavPage).GetTypeInfo().Assembly),
 
             });
 
             Children.Add(new NavigationPage(new FavoritesPage())
             {
                 IconImageSource = ImageSource.FromResource("naidisprojektmobile.Images.marker1.png",
-                typeof(BottomNavPage).GetTypeInfo().Assembly)
+                typeof(BottomNavPage).GetTypeInfo().Assembly),
              
 
             });
@@ -39,7 +39,8 @@ namespace naidisprojektmobile.Views
             Children.Add(new NavigationPage(new ProfilePage())
             {
                 IconImageSource = ImageSource.FromResource("naidisprojektmobile.Images.bi_person.png",
-                typeof(BottomNavPage).GetTypeInfo().Assembly)
+                typeof(BottomNavPage).GetTypeInfo().Assembly),
+             
             });
         }
 
