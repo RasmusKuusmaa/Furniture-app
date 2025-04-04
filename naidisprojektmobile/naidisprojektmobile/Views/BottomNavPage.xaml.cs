@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -22,12 +23,24 @@ namespace naidisprojektmobile.Views
 
             Children.Add(new NavigationPage(new ProductsPage())
             {
-                Title = "Products",
-            
-            });
-            Children.Add(new ProductsPage());
-            Children.Add(new ProductsPage());
+                IconImageSource = ImageSource.FromResource("naidisprojektmobile.Images.Vector.png",
+                typeof(BottomNavPage).GetTypeInfo().Assembly)
 
+            });
+
+            Children.Add(new NavigationPage(new FavoritesPage())
+            {
+                IconImageSource = ImageSource.FromResource("naidisprojektmobile.Images.marker1.png",
+                typeof(BottomNavPage).GetTypeInfo().Assembly)
+             
+
+            });
+
+            Children.Add(new NavigationPage(new ProfilePage())
+            {
+                IconImageSource = ImageSource.FromResource("naidisprojektmobile.Images.bi_person.png",
+                typeof(BottomNavPage).GetTypeInfo().Assembly)
+            });
         }
 
     }
