@@ -25,7 +25,8 @@ namespace naidisprojektmobile.Views
             Console.WriteLine($"Entered password: {password}");
             if (email == "aa" && password == "aa")
             {
-                await Navigation.PushAsync(new ProductsPage());
+                var bottomNav = new BottomNavPage();
+                Application.Current.MainPage = bottomNav;
             }
             else
             {

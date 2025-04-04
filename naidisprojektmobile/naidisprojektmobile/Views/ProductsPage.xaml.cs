@@ -15,6 +15,7 @@ namespace naidisprojektmobile.Views
         public ProductsPage()
         {
             InitializeComponent();
+
         }
     }
 }
