@@ -15,7 +15,14 @@ namespace naidisprojektmobile.Controls
         public static readonly BindableProperty IsPasswordProperty =
             BindableProperty.Create("IsPassword", typeof(bool), typeof(FormField), false);
 
+        public static readonly BindableProperty TextProperty =
+              BindableProperty.Create(nameof(Text), typeof(string), typeof(FormField), default(string), BindingMode.TwoWay);
 
+        public string Text
+        {
+            get => (string)GetValue(TextProperty);
+            set => SetValue(TextProperty, value);
+        }
         public string Placeholder
         {
             get => (string)GetValue(PlaceholderProperty);
@@ -53,6 +60,7 @@ namespace naidisprojektmobile.Controls
 
             entry.SetBinding(Entry.PlaceholderProperty, new Binding("Placeholder", source: this));
             entry.SetBinding(Entry.IsPasswordProperty, new Binding("IsPassword", source: this));
+            entry.SetBinding(Entry.TextProperty, new Binding(nameof(Text), source: this, mode: BindingMode.TwoWay));
 
             frame.Content = entry;
 

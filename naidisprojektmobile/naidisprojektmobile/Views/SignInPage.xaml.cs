@@ -19,9 +19,18 @@ namespace naidisprojektmobile.Views
         
         private async void OnSignInClicked(object sender, EventArgs e)
         {
-           
-
-            await Navigation.PushAsync(new ProductsPage());
+            var email = EmailEntry.Text?.Trim();
+            var password = PasswordEntry.Text?.Trim();
+            Console.WriteLine($"Entered email: {email}");
+            Console.WriteLine($"Entered password: {password}");
+            if (email == "aa" && password == "aa")
+            {
+                await Navigation.PushAsync(new ProductsPage());
+            }
+            else
+            {
+                await DisplayAlert("Login Failed", "Invalid email or password.", "OK");
+            }
         }
     }
 }
