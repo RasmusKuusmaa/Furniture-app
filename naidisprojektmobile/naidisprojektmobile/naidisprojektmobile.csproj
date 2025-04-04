@@ -38,6 +38,7 @@
     <None Remove="Images\bi_person.png" />
     <None Remove="Images\marker1.png" />
     <None Remove="Images\marker1.svg" />
+    <None Remove="Images\search.png" />
     <None Remove="Images\splash.png" />
     <None Remove="Images\Vector.png" />
   </ItemGroup>
@@ -45,6 +46,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Images\bi_person.png" />
     <EmbeddedResource Include="Images\marker1.png" />
+    <EmbeddedResource Include="Images\search.png" />
     <EmbeddedResource Include="Images\splash.png" />
     <EmbeddedResource Include="Images\Vector.png" />
   </ItemGroup>

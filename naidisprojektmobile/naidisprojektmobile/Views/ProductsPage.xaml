@@ -3,11 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="naidisprojektmobile.Views.ProductsPage"
              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="OptionButtonStyle" TargetType="Button">
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="WidthRequest" Value="75" />
+                <Setter Property="HeightRequest" Value="75" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="OptionLabelStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to prsfsoduct.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <Grid Padding="30, 0,30, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+        <StackLayout Orientation="Horizontal" Grid.Row="0">
+            <Image x:Name="SearchIcon" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
+            <Label Text="Find All you need" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontSize="16" FontAttributes="Bold"/>
         </StackLayout>
+        <!-- scrollable options-->
+           <ScrollView Orientation="Horizontal" Grid.Row="1">
+                <StackLayout Orientation="Horizontal" Spacing="30">
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                        <Button Style="{StaticResource OptionButtonStyle}" />
+                        <Label Text="Option 1" Style="{StaticResource OptionLabelStyle}" />
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                        <Button Style="{StaticResource OptionButtonStyle}" />
+                        <Label Text="Option 1" Style="{StaticResource OptionLabelStyle}" />
+
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                        <Button Style="{StaticResource OptionButtonStyle}" />
+                        <Label Text="Option 1" Style="{StaticResource OptionLabelStyle}" />
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                        <Button Style="{StaticResource OptionButtonStyle}" />
+                        <Label Text="Option 1" Style="{StaticResource OptionLabelStyle}" />
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                        <Button Style="{StaticResource OptionButtonStyle}" />
+                        <Label Text="Option 1" Style="{StaticResource OptionLabelStyle}" />
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                        <Button Style="{StaticResource OptionButtonStyle}" />
+                        <Label Text="Option 1" Style="{StaticResource OptionLabelStyle}" />
+                    </StackLayout>
+                </StackLayout>
+        </ScrollView>
+            
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
